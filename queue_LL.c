@@ -52,13 +52,13 @@ void display(Queue *front, Queue *rear){
         printf("Can't display - Empty Queue!!");
     else{
         Queue *temp = front;
-        printf("\nEntire Queue: \n");
+        printf("\nEntire Queue: [ ");
         while (temp != NULL)
         {
             printf("%d->", temp->element);
             temp = temp->next;
         }
-        printf("NULL\n");
+        printf("NULL ]\n");
     }
 }
 
