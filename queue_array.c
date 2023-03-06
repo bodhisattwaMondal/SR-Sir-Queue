@@ -26,7 +26,7 @@ void deQueue(int *queue, int *front, int* rear){
     }
     else
     {
-        int var = queue[*front];
+        // int var = queue[*front];
         queue[*front] = '\0';
         (*front)++;
     }
@@ -58,6 +58,9 @@ int main()
     
     enQueue(Queue, &front, &rear, 45);
     enQueue(Queue, &front, &rear, 5);
+    enQueue(Queue, &front, &rear, 7);
+    enQueue(Queue, &front, &rear, 23);
+    enQueue(Queue, &front, &rear, 2);
     display(Queue, &front, &rear);
 
     printf("Front element: %d", peak(Queue, &front));
